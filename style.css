@@ -1,0 +1,60 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.forForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    
+
+}
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 60px;
+    background-color:azure;
+}
+
+#mail,#password{
+    width: 300px;
+    height: 20px;
+    padding: 0%;
+    margin-bottom: 0%;
+    
+}
+p{
+    padding: 0%;
+    margin-top: 0%; 
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 90%;
+    height: 35px;
+    border-radius: 12px;
+    background-color: rgb(41, 137, 255);
+    color: aliceblue;
+    font-style:normal;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+button:hover{
+   background-color: rgb(0, 114, 253); 
+   font-size: x-large;
+}
+input{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
