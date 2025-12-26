@@ -24,7 +24,7 @@ form{
     height: 20px;
     padding: 0%;
     margin-bottom: 0%;
-    border: none;
+    border: 1px solid black;
     
 }
 p{

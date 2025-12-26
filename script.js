@@ -15,6 +15,7 @@ form.addEventListener("submit",(detail)=>{
         pri.style.display="flex";
         pri.textContent="Make sure email is more than 3 characters and has @ and a ."; 
         finalgateway.textContent="Make sure password is more than 8 characters";
+        finalgateway.style.color="Red";
         
     }
 })
