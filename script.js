@@ -6,7 +6,6 @@ let finalgateway= document.querySelector("#result");
 form.addEventListener("submit", (detail)=>{
     detail.preventDefault();
     let confirm = window.confirm('Are you sure you want to submit?');
-
     if(confirm === true){
         alert("successful signup!");
     }
