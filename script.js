@@ -3,8 +3,19 @@ let alldetails=document.querySelectorAll("input");
 let passwordNumber=document.querySelector("#password");
 let pri=document.querySelector("#print");
 let finalgateway= document.querySelector("#result");
-form.addEventListener("submit",(detail)=>{
+form.addEventListener("submit", (detail)=>{
     detail.preventDefault();
+    let confirm = window.confirm('Are you sure you want to submit?');
+
+    if(confirm === true){
+        alert("successful signup!");
+    }
+    else{
+        location.reload();
+    }
+})
+form.addEventListener("input",(detail)=>{
+    
     if((alldetails[0].value.length>3)&&(passwordNumber.value.length>8)){
         pri.style.display="none";
         finalgateway.style.display="flex";
