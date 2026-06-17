@@ -21,6 +21,9 @@ form.addEventListener("input",(detail)=>{
         finalgateway.style.color="green";
         finalgateway.textContent="All good to go!";
     }else{
+        if(alldetails[0].value.length<4){
+            
+        }
         finalgateway.style.display="flex";
         pri.style.display="flex";
         pri.textContent="Make sure email is more than 3 characters and has @ and a ."; 
