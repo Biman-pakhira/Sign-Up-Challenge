@@ -1,61 +1,86 @@
-html, body{
+*{
     margin: 0;
-    height: 100%;
-    background-color: antiquewhite;
+    padding: 0;
 }
-.forForm{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 
-    
+body{
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+/* Replace your existing .forminputs focus styles */
 
+.forminputs {
+    font-family: 'Segoe UI', sans-serif;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.96);
+    /* border-radius: 6px; */
+    background-color: #000;
+    color: #fff;
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* ✨ The magic — on focus/click */
+.forminputs:focus {
+    border: none;
+    border-bottom: 2px solid #ffc832;
+    background: rgba(255, 200, 50, 0.06);
+    box-shadow:
+        0 0 0 3px rgba(255, 200, 50, 0.15),   /* outer glow ring */
+        0 0 12px rgba(255, 200, 50, 0.2),       /* ambient glow */
+        /* inset 0 1px 0 rgba(255,255,255,0.08);   inner top highlight */
+    /* transform: translateY(-1px);                subtle lift */
+}
+
+.forminputs::placeholder {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.forminputs:focus::placeholder {
+    color: rgba(255, 200, 50, 0.5); /* placeholder tints gold on focus */
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    /* opacity: 1; Firefox */
 }
 form{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 60px;
-    background-color:azure;
-}
-
-#mail,#password{
-    width: 300px;
-    height: 20px;
-    padding: 0%;
-    margin-bottom: 0%;
-    border: 1px solid black;
-    
-}
-p{
-    padding: 0%;
-    margin-top: 0%; 
-    color: red;
-    font-size: 12px;
-    display: none;
-}
-.btn{
+    gap: 20px;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 button{
-    width: 90%;
-    height: 35px;
-    border-radius: 12px;
-    background-color: rgb(41, 137, 255);
-    color: aliceblue;
-    font-style:normal;
-    font-size: large;
-    font-weight: bold;
-    border: none;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
 }
-button:hover{
-   background-color: rgb(0, 114, 253); 
-   font-size: x-large;
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
-input{
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
+.occupationn{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
+input[type="radio"] {
+    background-color: #000;
+    color: black;
+  accent-color: rgba(255, 200, 50);
+  /* border-color: #007bff; */
+}
+input[type="checkbox"]{
+    accent-color: rgba(255, 200, 50);
+}
